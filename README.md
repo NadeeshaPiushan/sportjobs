@@ -14,7 +14,7 @@ cd sportjobs
 
 Initiate a **python virtual environment** and activate the environment
 ```
-python -m vev <name you prefer>
+python -m venv <name you prefer>
 ```
 
 

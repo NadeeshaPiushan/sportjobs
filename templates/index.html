@@ -21,16 +21,18 @@
     </div>
 
     
-    <div class="row px-2">
+    <div>
         {% for job in jobs %}
-        <div class="col-sm-12 col-md-6 border border-primary">
-        <li class="p-3">
+        <div>
+        <ul>
+        <li>
             <h3>{{ job['title'] }}</h3>
             <p>{{ job['description'] }}</p>
             <form action="/delete_job/{{ job['id'] }}" method="post">
                 <button type="submit">Delete</button>
             </form>
         </li>
+        </ul>    
         </div>
         {% endfor %}
     </div>
